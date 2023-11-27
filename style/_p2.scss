@@ -1,0 +1,33 @@
+#p2 {
+  background-image: linear-gradient(to bottom, #161b23, #666666);
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  .top {
+    @include fbox(space-evenly, center);
+
+    .left {
+      background: url("../img/2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 800px;
+      height: 400px;
+      // flex: 50%;
+    }
+    .right {
+      width: 400px
+    }
+  }
+  .bottom {
+    @include fbox(center, center);
+    flex-direction: column;
+    .container {
+      @include fbox(center, center);
+      margin-top: 20px;
+      text-align: center;
+      column-gap: 20%;
+      h1 {font-size: 5em;}
+    }
+  }
+}

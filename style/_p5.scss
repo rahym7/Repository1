@@ -1,0 +1,33 @@
+#p5 {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  @include fbox(center, center);
+  flex-direction: row;
+  background-color: #022419;
+  .left {
+    text-align: center;
+    flex: 40%;
+    @include fbox(center, center);
+    flex-direction: column;
+    h1 {
+      font-size: 8em;
+    }
+    p {
+      padding: 30px 10px;
+    }
+    button {
+      padding: 5px 10px;
+      color: #022419;
+      background-color: #fff;
+      border: 2px solid #fff;
+    }
+  }
+  .right {
+    height: 100vh;
+    background: url("../img/4.jpg");
+    background-size: cover;
+    background-position: 50%;
+    flex: 60%;
+  }
+}

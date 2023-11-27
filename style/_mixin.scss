@@ -1,0 +1,5 @@
+@mixin fbox($x, $y) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+}
